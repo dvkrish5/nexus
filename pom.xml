@@ -1,8 +1,6 @@
-+
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>nexus</groupId>
@@ -29,13 +27,13 @@
   </dependencies>
   <repositories>
     <repository>
-      <id>maven-group</id>
-      <url>http://localhost:8081/repository/ashwath1/</url>
-	  <releases><enabled>true</enabled></releases>
-    <snapshots><enabled>true</enabled></snapshots>
+       <id>maven-group</id>
+        <url>http://localhost:8081/repository/shivasree/</url>
+	    <releases><enabled>true</enabled></releases>
+       <snapshots><enabled>true</enabled></snapshots>
     </repository>
-  </repositories>
-  <distributionManagement>
+ </repositories>
+ <distributionManagement>
     <snapshotRepository>
       <id>maven-snapshots</id>
       <url>http://localhost:8081/repository/maven-snapshots/</url>
@@ -46,12 +44,12 @@
     </repository>
   </distributionManagement>
   <scm>
-   <connection>scm:githttps://https://github.com/dvkrish5/nexus.git</connection>
+   <connection>scm:git:https://github.com/dvkrish5/nexus.git</connection>
        <url>http://github.com/user/project</url>
-    <developerConnection>scm:git:https://github.com/dvkrish5/nexus.git<developerConnection>
-    <tag>HEAD</tag>
+    <developerConnection>scm:git:https://github.com/dvkrish5/nexus.git</developerConnection>
+    <tag>nexus-1.0-SNAPSHOT</tag>
   </scm>
-  
+
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
